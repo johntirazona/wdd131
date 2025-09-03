@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #1ba595;
-  --secondary-color: #f6b81a;
-  --accent1-color: #7bccc5;
-  --accent2-color: #c0e2db;
+  --primary-color: #253237;
+  --secondary-color: #5C6B73;
+  --accent1-color: #9DB4C0;
+  --accent2-color: #C2DFE3;
   --heading-font: "Luckiest Guy", cursive;
   --body-font: "Quicksand", sans-serif;
 }
@@ -31,6 +31,7 @@ header h1 span {
   display: block; 
   font-family: var(--heading-font);
   font-size: 1.5rem;
+
 }
 
 nav ul {
@@ -38,13 +39,13 @@ nav ul {
   justify-content: center;
   gap: 2rem;
   list-style: none;
-  background-color: #333;
+  background-color: var(--accent2-color);
   padding: 0.75rem;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: #333;
   font-weight: bold;
   transition: all 0.3s ease;
 }
@@ -73,7 +74,7 @@ main {
 .card h2 {
   font-family: var(--heading-font);
   font-size: 1.3rem;
-  color: var(--primary-color);
+  color: #333;
   margin-bottom: 1rem;
 }
 
@@ -100,7 +101,7 @@ text-align: center;
 
 .card ul li a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: #333;
   font-weight: 600;
 }
 
@@ -121,6 +122,6 @@ footer p {
 }
 
 #lastModified {
-  color: var(--secondary-color);
   font-size: 0.9rem;
+  color: #fff;
 }
