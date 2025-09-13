@@ -1,0 +1,27 @@
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #menuBtn {
+    display: none; /* hide hamburger button */
+  }
+
+  nav {
+    display: flex !important; /* always visible */
+    flex-direction: row; /* horizontal layout */
+    gap: 1.5rem;
+    margin-top: 0;
+  }
+
+  nav a {
+    padding: 0;
+  }
+
+  nav a:hover {
+    background: none;
+    text-decoration: underline;
+  }
+}
