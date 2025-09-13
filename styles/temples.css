@@ -33,7 +33,6 @@ text-align: center;
   cursor: pointer;
 }
 
-/* nav hidden on mobile */
 nav {
   display: none;
   flex-direction: column;
@@ -44,7 +43,6 @@ nav.show {
   display: flex;
 }
 
-/* nav links */
 nav a {
   color: white;
   text-decoration: none;
@@ -57,14 +55,12 @@ nav.open {
   display: flex;
 }
 
-/* hover effect */
 nav a:hover,
 nav a:focus {
   background: #0a9396;
   color: #fff;
 }
 
-/* gallery layout */
 main {
   max-width: 1000px;
   margin: 1rem auto;
@@ -97,15 +93,14 @@ footer {
   color: white;
 }
 
-/* Larger screen layout */
 @media (min-width: 768px) {
   #menuBtn {
-    display: none; /* hide hamburger */
+    display: none; 
   }
 
   nav {
-    display: flex; /* always visible */
-    flex-direction: row; /* horizontal */
+    display: flex; 
+    flex-direction: row; 
     justify-content: flex-end;
     gap: 1rem;
     margin-top: 0;

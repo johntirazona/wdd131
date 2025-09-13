@@ -6,12 +6,12 @@
   }
 
   #menuBtn {
-    display: none; /* hide hamburger button */
+    display: none; 
   }
 
   nav {
-    display: flex !important; /* always visible */
-    flex-direction: row; /* horizontal layout */
+    display: flex !important; 
+    flex-direction: row; 
     gap: 1.5rem;
     margin-top: 0;
   }
