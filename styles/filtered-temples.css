@@ -91,6 +91,10 @@ footer {
   color: white;
 }
 
+html {
+  font-display: swap;
+}
+
 @media (min-width: 768px) {
   #menuBtn {
     display: none;

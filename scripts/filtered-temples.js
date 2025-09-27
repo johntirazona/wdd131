@@ -102,11 +102,12 @@ function displayTemples(list) {
     const card = document.createElement("div");
     card.classList.add("card");
 
-    // create image with lazy loading
     const img = document.createElement("img");
     img.src = t.imageUrl;
     img.alt = t.templeName;
     img.loading = "lazy";
+    img.width = 400;
+    img.height = 230;
 
     card.innerHTML = `
       <h3>${t.templeName}</h3>
@@ -120,7 +121,6 @@ function displayTemples(list) {
   });
 }
 
-// ---------------- Filtering ----------------
 document.getElementById("home").addEventListener("click", () => displayTemples(temples));
 document.getElementById("old").addEventListener("click", () => {
   displayTemples(temples.filter(t => parseInt(t.dedicated.split(",")[0]) < 1900));
