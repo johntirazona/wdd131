@@ -1,0 +1,68 @@
+:root {
+  --primary-color: #253237;
+  --secondary-color: #5C6B73;
+  --accent1-color: #9DB4C0;
+  --accent2-color: #C2DFE3;
+  --heading-font: "Luckiest Guy", cursive;
+  --body-font: "Quicksand", sans-serif;
+}
+
+body {
+  font-family: var(--body-font);
+  background: var(--accent2-color);
+  color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-family: var(--heading-font);
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+main p {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 1.5rem 2rem;
+  max-width: 500px;
+  margin: 1rem auto;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+#reviewCount {
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+footer {
+  background: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  main p {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
